@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="redball.js"></script>
+	<script src="redfunc.js"></script> 
+	<style>
+		body {
+			overflow:hidden;
+		}
+		button {
+			padding:3px;
+		}
+	</style>	
+</head>
+<body>
+	<!--Cardinal Directions-->
+	<button onClick="moveUDLR('L', 50)">LEFT</button>
+	<button onClick="moveUDLR('U', 50)">UP</button>
+	<button onClick="moveUDLR('D', 50)">DOWN</button>
+	<button onClick="moveUDLR('R', 50)">RIGHT</button>
+	<!--Diagonals-->
+	<button onClick="moveUDLR('UL', 50)">UP LEFT</button>
+	<button onClick="moveUDLR('UR', 50)">UP RIGHT</button>
+	<button onClick="moveUDLR('DL', 50)">DOWN LEFT</button>
+	<button onClick="moveUDLR('DR', 50)">DOWN RIGHT</button>
+	<!--Shapes-->
+	<button onClick="moveSQ(50)">SQ</button>
+	<button onClick="moveTRI(50)">TRI</button>
+	<button onClick="moveOCT(30)">OCT</button>
+	<!--EXTRA CRED-->
+	<button onClick="moveRB('CIRC')">CIRC</button>
+	<button onClick="moveRB('BOU')">BOU</button>
+	<button onClick="moveRB('STAR')">STAR</button>
+	<button onClick="moveRB('INFIN')">INFIN</button>
+	<button onClick="moveRB('STAR2')">STAR2</button>
+	<hr width="100%">
+	<img id="redball" src="redball.jpg">
+</body>
+</html>
